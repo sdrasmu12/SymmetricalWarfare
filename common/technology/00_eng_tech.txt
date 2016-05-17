@@ -905,6 +905,45 @@ tech_thrusters_4 = {
 	}
 }
 
+tech_thrusters_5 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { rocketry }
+	ai_update_type = all	
+	prerequisites = { "tech_thrusters_4" }
+	weight = @tier3weight1
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_THRUSTER_4_TITLE"
+			desc = "TECH_UNLOCK_THRUSTER_4_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_rocketry"
+			}
+		}
+	}
+}
+
 # ##################
 # Defense Stations
 # ##################
