@@ -4,6 +4,10 @@
 #
 # ##################################################
 
+@battleship_25%_aura = -1280
+
+
+
 ### Variables
 
 @shipAuraRange = 80
@@ -85,7 +89,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_nanobot"
 	icon_frame = 1
-	power = -200
+	power = @battleship_25%_aura
 	cost = 250
 	
 	component_set = "ship_aura_components"
@@ -249,7 +253,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_shield_recharger"
 	icon_frame = 1
-	power = -200
+	power = @battleship_25%_aura
 	cost = 250
 	
 	component_set = "ship_aura_components"
@@ -421,7 +425,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_shield_dampener"
 	icon_frame = 1
-	power = -200
+	power = @battleship_25%_aura
 	cost = 250
 	
 	component_set = "ship_aura_components"
@@ -601,7 +605,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_quantum_destabilizer"
 	icon_frame = 1
-	power = -200
+	power = @battleship_25%_aura
 	cost = 250
 	
 	component_set = "ship_aura_components"
@@ -773,7 +777,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_aura_snare"
 	icon_frame = 1
-	power = -200
+	power = @battleship_25%_aura
 	cost = 250
 	
 	component_set = "ship_aura_components"
