@@ -35,10 +35,7 @@ corvette = {
 	combat_max_speed = @corvette_combat_speed
 	combat_rotation_speed = @corvette_combat_rotation
 	collision_radius = @corvette_collision_radius
-	modifier = {
-		ship_armor_add = 3
-		ship_evasion_mult = 0.15
-	}
+
 	max_hitpoints = 300
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -67,8 +64,8 @@ destroyer = {
 	combat_rotation_speed = @destroyer_combat_rotation
 	collision_radius = @destroyer_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.75
-		ship_armor_add = 6
+		ship_evasion_mult = -0.62
+		ship_armor_add = 8
 	}
 	max_hitpoints = 600
 	size_multiplier = 2
@@ -99,8 +96,8 @@ cruiser = {
 	combat_rotation_speed = @cruiser_combat_rotation
 	collision_radius = @cruiser_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.9
-		ship_armor_add = 12
+		ship_evasion_mult = -0.87
+		ship_armor_add = 20
 	}
 	max_hitpoints = 1200
 	size_multiplier = 4
@@ -131,8 +128,8 @@ battleship = {
 	combat_rotation_speed = @battleship_combat_rotation
 	collision_radius = @battleship_collision_radius
 	modifier = {
-		ship_evasion_mult = -0.95
-		ship_armor_add = 24
+		ship_evasion_mult = -0.96
+		ship_armor_add = 62
 	}
 	max_hitpoints = 2400
 	size_multiplier = 8

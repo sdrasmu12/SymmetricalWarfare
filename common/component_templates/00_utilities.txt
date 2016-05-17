@@ -4,21 +4,25 @@
 #	MANV	#
 #############
 
-@manv_1S = 5
-@manv_1M = 10
-@manv_1L = 20
+@manv_1S = 4.6
+@manv_1M = 9.2
+@manv_1L = 18.4
 
-@manv_2S = 10
-@manv_2M = 20
-@manv_2L = 40
+@manv_2S = 9.2
+@manv_2M = 18.4
+@manv_2L = 36.8
 
-@manv_3S = 15
-@manv_3M = 30
-@manv_3L = 45
+@manv_3S = 13.8
+@manv_3M = 27.6
+@manv_3L = 53.2
 
-@manv_4S = 20
-@manv_4M = 40
-@manv_4L = 80
+@manv_4S = 18.4
+@manv_4M = 36.8
+@manv_4L = 73.6
+
+@manv_5S = 23
+@manv_5M = 46
+@manv_5L = 92
 
 
 #################
@@ -45,46 +49,50 @@
 #	MANV Power	#
 #################
 
-@mpower_1S = -2
-@mpower_1M = -4
-@mpower_1L = -8
-
-@mpower_2S = -3
-@mpower_2M = -6
-@mpower_2L = -12
-
-@mpower_3S = -4
-@mpower_3M = -8
-@mpower_3L = -16
-
-@mpower_4S = -5
-@mpower_4M = -10
-@mpower_4L = -20
+@mpower_S1 = 5
+@mpower_M1 = 10
+@mpower_L1 = 20
+            
+@mpower_S2 = 10
+@mpower_M2 = 20
+@mpower_L2 = 40
+            
+@mpower_S3 = 20
+@mpower_M3 = 40
+@mpower_L3 = 160
+            
+@mpower_S4 = 40
+@mpower_M4 = 80
+@mpower_L4 = 160
+            
+@mpower_S5 = 80
+@mpower_M5 = 160
+@mpower_L5 = 320
 
 
 #############
 #	ARMOR	#
 #############
 
-@armor_1S = 1
-@armor_1M = 2
-@armor_1L = 4
+@armor_1S = 0.9
+@armor_1M = 1.8
+@armor_1L = 3.6
 
-@armor_2S = 2
-@armor_2M = 4
-@armor_2L = 8
+@armor_2S = 1.8
+@armor_2M = 3.6
+@armor_2L = 7.2
 
-@armor_3S = 3
-@armor_3M = 6
-@armor_3L = 12
+@armor_3S = 2.7
+@armor_3M = 5.4
+@armor_3L = 10.8
 
-@armor_4S = 4
-@armor_4M = 8
-@armor_4L = 16
+@armor_4S = 3.6
+@armor_4M = 7.2
+@armor_4L = 14.8
 
-@armor_5S = 5
-@armor_5M = 10
-@armor_5L = 20
+@armor_5S = 4.5
+@armor_5M = 9
+@armor_5L = 18
 
 #############
 #	COST	#
@@ -109,6 +117,34 @@
 @cost_5S = 10
 @cost_5M = 20
 @cost_5L = 40
+
+
+##################
+#	Armor POWER  #
+##################
+
+@power_S1 = 5
+@power_M1 = 10
+@power_L1 = 20
+            
+@power_S2 = 10
+@power_M2 = 20
+@power_L2 = 40
+            
+@power_S3 = 20
+@power_M3 = 40
+@power_L3 = 160
+            
+@power_S4 = 40
+@power_M4 = 80
+@power_L4 = 160
+            
+@power_S5 = 80
+@power_M5 = 160
+@power_L5 = 320
+
+
+
 
 #############
 # UTILITIES #
@@ -332,6 +368,57 @@ utility_component_template = {
 	component_set = "MANV_4"
 }
 
+# Manueverability Thrusters 5
+utility_component_template = {
+	key = "MANV_THRUST_SMALL_5"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_5S
+	cost = @mcost_5M
+	
+	modifier = {
+		ship_evasion_add = @manv_5S
+	}
+	
+	prerequisites = { "tech_thrusters_5" }
+	component_set = "MANV_5"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_MED_5"
+	size = medium
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_5M
+	cost = @mcost_5M
+	
+	modifier = {
+		ship_evasion_add = @manv_5M
+	}
+	
+	prerequisites = { "tech_thrusters_5" }
+	component_set = "MANV_5"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_LARGE_5"
+	size = large
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_5L
+	cost = @mcost_5L
+	
+	
+	modifier = {
+		ship_evasion_add = @manv_5L
+	}
+	
+	prerequisites = { "tech_thrusters_5" }
+	component_set = "MANV_5
+}
+
+
 
 # Plasteel Armor
 utility_component_template = {
@@ -339,7 +426,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_armor_1"
 	icon_frame = 1
-	power = 0
+	power = @power_S1
 	cost = @cost_1S
 	armor_value = @armor_1S
 	
@@ -352,7 +439,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_armor_1"
 	icon_frame = 1
-	power = 0
+	power = @power_M1
 	cost = @cost_1M
 	armor_value = @armor_1M
 	
@@ -365,7 +452,7 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_armor_1"
 	icon_frame = 1
-	power = 0
+	power = @power_L1
 	cost = @cost_1L
 	armor_value = @armor_1L
 	
@@ -379,7 +466,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_armor_2"
 	icon_frame = 1
-	power = 0
+	power = @power_S2
 	cost = @cost_2S
 	armor_value = @armor_2S
 	
@@ -392,7 +479,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_armor_2"
 	icon_frame = 1
-	power = 0
+	power = @power_M2
 	cost = @cost_2M
 	armor_value = @armor_2M
 	
@@ -405,7 +492,7 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_armor_2"
 	icon_frame = 1
-	power = 0
+	power = @power_L2
 	cost = @cost_2L
 	armor_value = @armor_2L
 	
@@ -419,7 +506,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_armor_3"
 	icon_frame = 1
-	power = 0
+	power = @power_S3
 	cost = @cost_3S
 	armor_value = @armor_3S
 	
@@ -432,7 +519,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_armor_3"
 	icon_frame = 1
-	power = 0
+	power = @power_M3
 	cost = @cost_3M
 	armor_value = @armor_3M
 	
@@ -445,7 +532,7 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_armor_3"
 	icon_frame = 1
-	power = 0
+	power = @power_L3
 	cost = @cost_3L
 	armor_value = @armor_3L
 	
@@ -459,7 +546,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_armor_4"
 	icon_frame = 1
-	power = 0
+	power = @power_S4
 	cost = @cost_4S
 	armor_value = @armor_4S
 	
@@ -472,7 +559,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_armor_4"
 	icon_frame = 1
-	power = 0
+	power = @power_M4
 	cost = @cost_4M
 	armor_value = @armor_4M
 	
@@ -485,7 +572,7 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_armor_4"
 	icon_frame = 1
-	power = 0
+	power = @power_L4
 	cost = @cost_4L
 	armor_value = @armor_4L
 	
