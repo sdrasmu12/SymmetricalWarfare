@@ -1,5 +1,14 @@
 # Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
 
+
+#Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+
 #################
 # Missile Speed #
 #################
@@ -12,14 +21,7 @@
 
 
 
-#Updated Range on these
 
-# DEFAULT VALUES:
-# is_missile = no
-# is_beam = no
-# is_point_defence = no
-
-@missile_speed = 5
 
 # ####################
 #  Missiles

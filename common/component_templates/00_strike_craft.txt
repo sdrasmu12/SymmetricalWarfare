@@ -5,36 +5,26 @@
 
 
 @count = 4
-@scout_health_1
-#@fighter_health_1 = 
-#@fighter_health_2
-#@fighter_health_3
-#@bomber_health_1
-#@bomber_health_2
-#@bomber_health_3
-
-
-
-
-
 
 
 strike_craft_component_template = {
 	key = "LARGE_SCOUT_HANGAR_1"
 	size = LARGE
 	entity = "fighter_entity"
-
+	
+	weapon_type = point_defence
+	projectile_gfx = "infrared_laser_s"
 	power = -20
 	cost = 20
 	
-	count = @count
+	count = 4
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
 	damage = { min = 4 max = 9 }
-	cooldown = 20
+	cooldown = 2
 	range = 8
-	accuracy = 0.75
+	accuracy = 1.0
 	
 	health = 7
 	armor = 0
@@ -48,10 +38,7 @@ strike_craft_component_template = {
 	shield_penetration = 0
 	armor_penetration = 0
 	
-	ship_behavior = "bombers_behavior"
-	
-	weapon_type = instant
-	projectile_gfx = "infrared_laser_s"
+	ship_behavior = "fighters_behavior"
 	
 	icon = "GFX_ship_part_strike_craft_scout_1"
 	icon_frame = 1
@@ -64,20 +51,21 @@ strike_craft_component_template = {
 	size = LARGE
 	entity = "fighter_entity"
 	
-	
+	weapon_type = point_defence
+	projectile_gfx = "infrared_laser_s"
 	power = -30
 	cost = 30
 	
-	count = @count
+	count = 4
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 27 max = 45 }
+	damage = { min = 5 max = 11 }
 	cooldown = 2
 	range = 8
-	accuracy = 0.75
+	accuracy = 1.0
 	
-	health = @fighter_health_1
+	health = 8
 	armor = 0
 	shield = 0
 	
@@ -85,14 +73,11 @@ strike_craft_component_template = {
 	rotation_speed = 0.1
 	acceleration = 0.5
 	
-	shield_damage = 0
-	shield_penetration = 1.0
-	armor_penetration = 4.55
+	shield_damage = 1.0
+	shield_penetration = 0
+	armor_penetration = 0
 	
-	ship_behavior = "bombers_behavior"
-	
-	weapon_type = instant
-	projectile_gfx = "infrared_laser_s"
+	ship_behavior = "fighters_behavior"
 	
 	icon = "GFX_ship_part_strike_craft_fighter_1"
 	icon_frame = 1
@@ -106,17 +91,19 @@ strike_craft_component_template = {
 	size = LARGE
 	entity = "fighter_entity"
 	
+	weapon_type = point_defence
+	projectile_gfx = "infrared_laser_s"
 	power = -40
 	cost = 40
 	
-	count = @count
+	count = 4
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 34 max = 57 }
+	damage = { min = 7 max = 12 }
 	cooldown = 2
 	range = 8
-	accuracy = 0.75
+	accuracy = 1.0
 	
 	health = 10
 	armor = 0
@@ -126,14 +113,11 @@ strike_craft_component_template = {
 	rotation_speed = 0.1
 	acceleration = 0.5
 	
-	shield_damage = 0
-	shield_penetration = 1.0
-	armor_penetration = 4.47
+	shield_damage = 1.0
+	shield_penetration = 0
+	armor_penetration = 0
 	
-	ship_behavior = "bombers_behavior"
-	
-	weapon_type = instant
-	projectile_gfx = "infrared_laser_s"
+	ship_behavior = "fighters_behavior"
 	
 	icon = "GFX_ship_part_strike_craft_fighter_2"
 	icon_frame = 1
@@ -147,19 +131,19 @@ strike_craft_component_template = {
 	size = LARGE
 	entity = "fighter_entity"
 	
-	weapon_type = instant
+	weapon_type = point_defence
 	projectile_gfx = "infrared_laser_s"
 	power = -50
 	cost = 50
 	
-	count = @count
+	count = 4
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 40 max = 66 }
+	damage = { min = 8 max = 14 }
 	cooldown = 2
 	range = 8
-	accuracy = 0.75
+	accuracy = 1.0
 	
 	health = 12
 	armor = 0
@@ -169,11 +153,11 @@ strike_craft_component_template = {
 	rotation_speed = 0.1
 	acceleration = 0.5
 	
-	shield_damage = 0
-	shield_penetration = 1
-	armor_penetration = 4.58
+	shield_damage = 1.0
+	shield_penetration = 0
+	armor_penetration = 0
 	
-	ship_behavior = "bombers_behavior"
+	ship_behavior = "fighters_behavior"
 	
 	icon = "GFX_ship_part_strike_craft_fighter_3"
 	icon_frame = 1
@@ -194,8 +178,8 @@ strike_craft_component_template = {
 	launch_time = 5.0
 	
 	damage = { min = 92 max = 154 }
-	cooldown = 5
-	range = 8
+	cooldown = 2
+	range = 2
 	accuracy = 0.75
 	
 	health = 9
@@ -234,8 +218,8 @@ strike_craft_component_template = {
 	launch_time = 5.0
 	
 	damage = { min = 114 max = 190 }
-	cooldown = 5
-	range = 8
+	cooldown = 2
+	range = 2
 	accuracy = 0.75
 	
 	health = 11
@@ -274,8 +258,8 @@ strike_craft_component_template = {
 	launch_time = 5.0
 	
 	damage = { min = 128 max = 213 }
-	cooldown = 5
-	range = 8
+	cooldown = 2
+	range = 2
 	accuracy = 0.75
 	
 	health = 13

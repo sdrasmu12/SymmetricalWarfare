@@ -6,9 +6,9 @@ weapon_component_template = {
 	size = small
 	entity = "turret_point_defence_entity"
 	damage = { min = 1.5 max = 1.5 }
-	windup = { min = 0.1 max = 0.2 }
-	total_fire_time = 0.1
-	range = 0.5
+	windup = { min = 1 max = 2 }
+	total_fire_time = 1
+	range = 3
 	accuracy = 0.8
 	
 	
@@ -30,9 +30,9 @@ weapon_component_template = {
 	size = small
 	entity = "turret_point_defence_entity"
 	damage = { min = 1.5 max = 1.5 }
-	windup = { min = 0.1 max = 0.2 }
-	total_fire_time = 0.1
-	range = 1
+	windup = { min = 1 max = 2 }
+	total_fire_time = 1
+	range = 3
 	accuracy = 0.8
 	
 	
@@ -54,9 +54,9 @@ weapon_component_template = {
 	size = small
 	entity = "turret_point_defence_entity"
 	damage = { min = 1.5 max = 1.5 }
-	windup = { min = 0.1 max = 0.2 }
-	total_fire_time = 0.1
-	range = 2
+	windup = { min = 1 max = 2 }
+	total_fire_time = 1
+	range = 3
 	accuracy = 0.8
 	
 	
@@ -87,8 +87,8 @@ weapon_component_template = {
 	damage = { min = 22.0 max = 32.0 }
 	windup = { min = 2.5 max = 17.5 }
 	total_fire_time = 45
-	range = 10
-	accuracy = 1
+	range = 15
+	accuracy = 0.8
 		
 	icon = "GFX_ship_part_flak_batteries_1"
 	icon_frame = 1
@@ -110,8 +110,8 @@ weapon_component_template = {
 	damage = { min = 22.0 max = 32.0 }
 	windup = { min = 2.5 max = 17.5 }
 	total_fire_time = 45
-	range = 10
-	accuracy = 1
+	range = 15
+	accuracy = 0.8
 		
 	icon = "GFX_ship_part_flak_batteries_2"
 	icon_frame = 1
