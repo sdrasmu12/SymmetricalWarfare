@@ -52,25 +52,25 @@
 #	SHIELD	#
 #############
 
-@shield_S1 = 25
-@shield_M1 = 50
-@shield_L1 = 100
+@shield_S1 = 16
+@shield_M1 = 32
+@shield_L1 = 64
 
-@shield_S2 = 50
-@shield_M2 = 100
-@shield_L2 = 200
+@shield_S2 = 32
+@shield_M2 = 64
+@shield_L2 = 128
 
-@shield_S3 = 75
-@shield_M3 = 150
-@shield_L3 = 300
+@shield_S3 = 48
+@shield_M3 = 96
+@shield_L3 = 192
 
-@shield_S4 = 100
-@shield_M4 = 200
-@shield_L4 = 400
+@shield_S4 = 64
+@shield_M4 = 128
+@shield_L4 = 256
 
-@shield_S5 = 125
-@shield_M5 = 250
-@shield_L5 = 500
+@shield_S5 = 70
+@shield_M5 = 140
+@shield_L5 = 280
 
 #############
 # UTILITIES #
