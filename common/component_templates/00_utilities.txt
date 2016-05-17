@@ -1,0 +1,686 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#############
+#	MANV	#
+#############
+
+@manv_1S = 5
+@manv_1M = 10
+@manv_1L = 20
+
+@manv_2S = 10
+@manv_2M = 20
+@manv_2L = 40
+
+@manv_3S = 15
+@manv_3M = 30
+@manv_3L = 45
+
+@manv_4S = 20
+@manv_4M = 40
+@manv_4L = 80
+
+
+#################
+#	MANV COST	#
+#################
+
+@mcost_1S = 2
+@mcost_1M = 4
+@mcost_1L = 8
+
+@mcost_2S = 4
+@mcost_2M = 8
+@mcost_2L = 16
+
+@mcost_3S = 6
+@mcost_3M = 12
+@mcost_3L = 24
+
+@mcost_4S = 8
+@mcost_4M = 16
+@mcost_4L = 32
+
+#################
+#	MANV Power	#
+#################
+
+@mpower_1S = -2
+@mpower_1M = -4
+@mpower_1L = -8
+
+@mpower_2S = -3
+@mpower_2M = -6
+@mpower_2L = -12
+
+@mpower_3S = -4
+@mpower_3M = -8
+@mpower_3L = -16
+
+@mpower_4S = -5
+@mpower_4M = -10
+@mpower_4L = -20
+
+
+#############
+#	ARMOR	#
+#############
+
+@armor_1S = 1
+@armor_1M = 2
+@armor_1L = 4
+
+@armor_2S = 2
+@armor_2M = 4
+@armor_2L = 8
+
+@armor_3S = 3
+@armor_3M = 6
+@armor_3L = 12
+
+@armor_4S = 4
+@armor_4M = 8
+@armor_4L = 16
+
+@armor_5S = 5
+@armor_5M = 10
+@armor_5L = 20
+
+#############
+#	COST	#
+#############
+
+@cost_1S = 2
+@cost_1M = 4
+@cost_1L = 8
+
+@cost_2S = 4
+@cost_2M = 8
+@cost_2L = 16
+
+@cost_3S = 6
+@cost_3M = 12
+@cost_3L = 24
+
+@cost_4S = 8
+@cost_4M = 16
+@cost_4L = 32
+
+@cost_5S = 10
+@cost_5M = 20
+@cost_5L = 40
+
+#############
+# UTILITIES #
+#############
+
+utility_component_template = {
+	key = "MEDIUM_SCIENCE_LAB_1"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+# Manueverability Thrusters 1
+utility_component_template = {
+	key = "MANV_THRUST_SMALL_1"
+	size = small
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @mpower_1S
+	cost = @mcost_1M
+	
+	modifier = {
+		ship_evasion_add = @manv_1S
+	}
+	
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "MANV_1"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_MED_1"
+	size = medium
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @mpower_1M
+	cost = @mcost_1M
+	
+	modifier = {
+		ship_evasion_add = @manv_1M
+	}
+	
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "MANV_1"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_LARGE_1"
+	size = large
+	icon = "GFX_ship_part_thruster_1"
+	icon_frame = 1
+	power = @mpower_1L
+	cost = @mcost_1L
+	
+	
+	modifier = {
+		ship_evasion_add = @manv_1L
+	}
+	
+	prerequisites = { "tech_thrusters_1" }
+	component_set = "MANV_1"
+}
+
+# Manueverability Thrusters 2
+utility_component_template = {
+	key = "MANV_THRUST_SMALL_2"
+	size = small
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @mpower_2S
+	cost = @mcost_2M
+	
+	modifier = {
+		ship_evasion_add = @manv_2S
+	}
+	
+	prerequisites = { "tech_thrusters_2" }
+	component_set = "MANV_2"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_MED_2"
+	size = medium
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @mpower_2M
+	cost = @mcost_2M
+	
+	modifier = {
+		ship_evasion_add = @manv_2M
+	}
+	
+	prerequisites = { "tech_thrusters_2" }
+	component_set = "MANV_2"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_LARGE_2"
+	size = large
+	icon = "GFX_ship_part_thruster_2"
+	icon_frame = 1
+	power = @mpower_2L
+	cost = @mcost_2L
+	
+	
+	modifier = {
+		ship_evasion_add = @manv_2L
+	}
+	
+	prerequisites = { "tech_thrusters_2" }
+	component_set = "MANV_2"
+}
+
+# Manueverability Thrusters 3
+utility_component_template = {
+	key = "MANV_THRUST_SMALL_3"
+	size = small
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @mpower_3S
+	cost = @mcost_3M
+	
+	modifier = {
+		ship_evasion_add = @manv_3S
+	}
+	
+	prerequisites = { "tech_thrusters_3" }
+	component_set = "MANV_3"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_MED_3"
+	size = medium
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @mpower_3M
+	cost = @mcost_3M
+	
+	modifier = {
+		ship_evasion_add = @manv_3M
+	}
+	
+	prerequisites = { "tech_thrusters_3" }
+	component_set = "MANV_3"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_LARGE_3"
+	size = large
+	icon = "GFX_ship_part_thruster_3"
+	icon_frame = 1
+	power = @mpower_3L
+	cost = @mcost_3L
+	
+	
+	modifier = {
+		ship_evasion_add = @manv_3L
+	}
+	
+	prerequisites = { "tech_thrusters_3" }
+	component_set = "MANV_3"
+}
+
+# Manueverability Thrusters 4
+utility_component_template = {
+	key = "MANV_THRUST_SMALL_4"
+	size = small
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_4S
+	cost = @mcost_4M
+	
+	modifier = {
+		ship_evasion_add = @manv_4S
+	}
+	
+	prerequisites = { "tech_thrusters_4" }
+	component_set = "MANV_4"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_MED_4"
+	size = medium
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_4M
+	cost = @mcost_4M
+	
+	modifier = {
+		ship_evasion_add = @manv_4M
+	}
+	
+	prerequisites = { "tech_thrusters_4" }
+	component_set = "MANV_4"
+}
+
+utility_component_template = {
+	key = "MANV_THRUST_LARGE_4"
+	size = large
+	icon = "GFX_ship_part_thruster_4"
+	icon_frame = 1
+	power = @mpower_4L
+	cost = @mcost_4L
+	
+	
+	modifier = {
+		ship_evasion_add = @manv_4L
+	}
+	
+	prerequisites = { "tech_thrusters_4" }
+	component_set = "MANV_4"
+}
+
+
+# Plasteel Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_1"
+	size = small
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1S
+	armor_value = @armor_1S
+	
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "ARMOR_1"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_1"
+	size = medium
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1M
+	armor_value = @armor_1M
+	
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "ARMOR_1"
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_1"
+	size = large
+	icon = "GFX_ship_part_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1L
+	armor_value = @armor_1L
+	
+	prerequisites = { "tech_ship_armor_1" }
+	component_set = "ARMOR_1"
+}
+
+# Durasteel Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_2"
+	size = small
+	icon = "GFX_ship_part_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2S
+	armor_value = @armor_2S
+	
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "ARMOR_2"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_2"
+	size = medium
+	icon = "GFX_ship_part_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2M
+	armor_value = @armor_2M
+	
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "ARMOR_2"
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_2"
+	size = large
+	icon = "GFX_ship_part_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2L
+	armor_value = @armor_2L
+	
+	prerequisites = { "tech_ship_armor_2" }
+	component_set = "ARMOR_2"
+}
+
+# Ceramo-Metal Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_3"
+	size = small
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3S
+	armor_value = @armor_3S
+	
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "ARMOR_3"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_3"
+	size = medium
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3M
+	armor_value = @armor_3M
+	
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "ARMOR_3"
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_3"
+	size = large
+	icon = "GFX_ship_part_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3L
+	armor_value = @armor_3L
+	
+	prerequisites = { "tech_ship_armor_3" }
+	component_set = "ARMOR_3"
+}
+
+# Nanocomposite Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_4"
+	size = small
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4S
+	armor_value = @armor_4S
+	
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_4"
+	size = medium
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4M
+	armor_value = @armor_4M
+	
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_4"
+	size = large
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4L
+	armor_value = @armor_4L
+	
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+}
+
+# Neutronium Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_5"
+	size = small
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5S
+	armor_value = @armor_5S
+	
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_5"
+	size = medium
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5M
+	armor_value = @armor_5M
+	
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_5"
+	size = large
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5L
+	armor_value = @armor_5L
+	
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+}
+
+# Crystal-Infused Plating 
+utility_component_template = {
+	key = "SMALL_CRYSTAL_ARMOR_1"
+	size = small
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3S
+	
+	modifier = {
+		ship_hitpoints_add = 50
+	}
+	
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+}
+
+utility_component_template = {
+	key = "MEDIUM_CRYSTAL_ARMOR_1"
+	size = medium
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3M
+	
+	modifier = {
+		ship_hitpoints_add = 100
+	}
+	
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+}
+
+utility_component_template = {
+	key = "LARGE_CRYSTAL_ARMOR_1"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3L
+	
+	modifier = {
+		ship_hitpoints_add = 200
+	}
+	
+	prerequisites = { "tech_crystal_armor_1" }
+	component_set = "CRYSTAL_ARMOR_1"
+}
+
+# Crystal-Forged Plating 
+utility_component_template = {
+	key = "SMALL_CRYSTAL_ARMOR_2"
+	size = small
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5S
+	
+	modifier = {
+		ship_hitpoints_add = 100
+	}
+	
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+}
+
+utility_component_template = {
+	key = "MEDIUM_CRYSTAL_ARMOR_2"
+	size = medium
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5M
+	
+	modifier = {
+		ship_hitpoints_add = 200
+	}
+	
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+}
+
+utility_component_template = {
+	key = "LARGE_CRYSTAL_ARMOR_2"
+	size = large
+	icon = "GFX_ship_part_crystal_armor_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5L
+	
+	modifier = {
+		ship_hitpoints_add = 400
+	}
+	
+	prerequisites = { "tech_crystal_armor_2" }
+	component_set = "CRYSTAL_ARMOR_2"
+}
+
+utility_component_template = {
+	key = "BORDER_EXTRUDER_1"
+	size = medium
+	icon = "GFX_ship_part_border_extruder_1"
+	icon_frame = 1
+	power = 0
+	cost = 20
+	border_extrusion_range = 15
+	class_restriction = { shipclass_outpost_station }
+	
+	component_set = "border_extruders"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BORDER_EXTRUDER_2"
+	size = medium
+	icon = "GFX_ship_part_border_extruder_2"
+	icon_frame = 1
+	power = 0
+	cost = 20
+	border_extrusion_range = 20
+	class_restriction = { shipclass_outpost_station }
+	hidden = yes
+	
+	component_set = "border_extruders"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BORDER_EXTRUDER_3"
+	size = medium
+	icon = "GFX_ship_part_border_extruder_3"
+	icon_frame = 1
+	power = 0
+	cost = 20
+	border_extrusion_range = 25
+	class_restriction = { shipclass_outpost_station }
+	hidden = yes
+	
+	component_set = "border_extruders"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
