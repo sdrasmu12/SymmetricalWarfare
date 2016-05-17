@@ -5,10 +5,10 @@
 @ftl3 = 15
 @ftl4 = 30
 
-@power1 = -5
-@power2 = -10
-@power3 = -15
-@power4 = -30
+@power1 = 0
+@power2 = 0
+@power3 = 0
+@power4 = 0
 
 #############
 # UTILITIES #
