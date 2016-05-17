@@ -3,25 +3,26 @@
 #	POWER	#
 #############
 
-@power_S1 = 10
-@power_M1 = 20
-@power_L1 = 40
+@power_S1 = 5
+@power_M1 = 10
+@power_L1 = 20
             
-@power_S2 = 15
-@power_M2 = 30
-@power_L2 = 60
+@power_S2 = 10
+@power_M2 = 20
+@power_L2 = 40
             
 @power_S3 = 20
 @power_M3 = 40
-@power_L3 = 80
+@power_L3 = 160
             
-@power_S4 = 25
-@power_M4 = 50
-@power_L4 = 100
+@power_S4 = 40
+@power_M4 = 80
+@power_L4 = 160
             
-@power_S5 = 30
-@power_M5 = 60
-@power_L5 = 120
+@power_S5 = 80
+@power_M5 = 160
+@power_L5 = 320
+
 
 #############
 #	COST	#
