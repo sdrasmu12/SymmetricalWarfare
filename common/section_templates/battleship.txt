@@ -48,9 +48,9 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -110,9 +110,9 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -152,9 +152,9 @@ ship_section_template = {
 		locatorname = "large_gun_02"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -207,9 +207,9 @@ ship_section_template = {
 		locatorname = "strike_craft_locator_01"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -275,9 +275,9 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -337,9 +337,9 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	small_utility_slots = 1
+	small_utility_slots = 0
 	medium_utility_slots = 2
-	large_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -412,9 +412,9 @@ ship_section_template = {
 
 	}
 	
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -473,9 +473,9 @@ ship_section_template = {
 		locatorname = "medium_gun_04"
 	}
 	
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -526,9 +526,9 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 	
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -574,9 +574,9 @@ ship_section_template = {
 		locatorname = "large_gun_03"
 	}
 	
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -637,9 +637,9 @@ ship_section_template = {
 		locatorname = "strike_craft_locator_01"
 	}	
 	
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -706,9 +706,9 @@ ship_section_template = {
 		locatorname = "strike_craft_locator_02"
 	}	
 		
-	small_utility_slots = 1
-	medium_utility_slots = 1
-	large_utility_slots = 2
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
 	
 	cost = 240
 }
@@ -758,9 +758,9 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	small_utility_slots = 2
-	medium_utility_slots = 1
-	large_utility_slots = 3
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
 	
 	cost = 240
 }
@@ -796,9 +796,9 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 	
-	small_utility_slots = 2
-	medium_utility_slots = 1
-	large_utility_slots = 3
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
 	
 	cost = 240
 }
@@ -838,9 +838,9 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 	
-	small_utility_slots = 2
-	medium_utility_slots = 1
-	large_utility_slots = 3
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
 	
 	cost = 240
 }
@@ -890,9 +890,9 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 	}
 	
-	small_utility_slots = 2
-	medium_utility_slots = 1
-	large_utility_slots = 3
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
 	
 	cost = 240
 }

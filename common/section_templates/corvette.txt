@@ -34,7 +34,8 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	small_utility_slots = 5
+	small_utility_slots = 4
+	medium_utility_slots = 2
 	
 	cost = 30
 }
@@ -89,7 +90,8 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 	
-	small_utility_slots = 5
+	small_utility_slots = 4
+	medium_utility_slots = 2
 	
 	cost = 30
 }
@@ -113,7 +115,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	small_utility_slots = 3
+	small_utility_slots = 4
 	medium_utility_slots = 2
 	
 	cost = 30
