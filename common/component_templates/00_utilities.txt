@@ -45,29 +45,34 @@
 @mcost_4M = 16
 @mcost_4L = 32
 
+@mcost_5S = 10
+@mcost_5M = 20
+@mcost_5L = 40
+
 #################
 #	MANV Power	#
 #################
 
-@mpower_S1 = -5
-@mpower_M1 = -10
-@mpower_L1 = -20
+@mpower_1S = -5
+@mpower_1M = -10
+@mpower_1L = -20
             
-@mpower_S2 = -10
-@mpower_M2 = -20
-@mpower_L2 = -40
+@mpower_2S = -10
+@mpower_2M = -20
+@mpower_2L = -40
             
-@mpower_S3 = -20
-@mpower_M3 = -40
-@mpower_L3 = -160
+@mpower_3S = -20
+@mpower_3M = -40
+@mpower_3L = -160
             
-@mpower_S4 = -40
-@mpower_M4 = -80
-@mpower_L4 = -160
+@mpower_4S = -40
+@mpower_4M = -80
+@mpower_4L = -160
             
-@mpower_S5 = -80
-@mpower_M5 = -160
-@mpower_L5 = -320
+@mpower_5S = -80
+@mpower_5M = -160
+@mpower_5L = -320
+
 
 
 #############
@@ -325,7 +330,7 @@ utility_component_template = {
 	icon = "GFX_ship_part_thruster_4"
 	icon_frame = 1
 	power = @mpower_4S
-	cost = @mcost_4M
+	cost = @mcost_4S
 	
 	modifier = {
 		ship_evasion_add = @manv_4S
@@ -375,7 +380,7 @@ utility_component_template = {
 	icon = "GFX_ship_part_thruster_4"
 	icon_frame = 1
 	power = @mpower_5S
-	cost = @mcost_5M
+	cost = @mcost_5S
 	
 	modifier = {
 		ship_evasion_add = @manv_5S
@@ -409,15 +414,13 @@ utility_component_template = {
 	power = @mpower_5L
 	cost = @mcost_5L
 	
-	
 	modifier = {
 		ship_evasion_add = @manv_5L
 	}
 	
 	prerequisites = { "tech_thrusters_5" }
-	component_set = "MANV_5
+	component_set = "MANV_5"
 }
-
 
 
 # Plasteel Armor
@@ -586,7 +589,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_armor_5"
 	icon_frame = 1
-	power = 0
+	power = @power_S5
 	cost = @cost_5S
 	armor_value = @armor_5S
 	
@@ -599,7 +602,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_armor_5"
 	icon_frame = 1
-	power = 0
+	power = @power_5M
 	cost = @cost_5M
 	armor_value = @armor_5M
 	
@@ -612,7 +615,7 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_armor_5"
 	icon_frame = 1
-	power = 0
+	power = @power_5L
 	cost = @cost_5L
 	armor_value = @armor_5L
 	

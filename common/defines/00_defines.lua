@@ -218,8 +218,8 @@ NDefines = {
 		SHIP_DAMAGE_TEXTURE = "gfx/models/ships/other/damaged_noise.dds",
 		SHIP_RANDOM_HEIGHT_OFFSET = 60.0,
 
-		RANDOM_HEIGHT_MIN = -70.0,
-		RANDOM_HEIGHT_MAX = 70.0,
+		RANDOM_HEIGHT_MIN = -10.0,
+		RANDOM_HEIGHT_MAX = 10.0,
 
 		MOVE_ARROW_SYSTEM_CONTROL_POINT_SPACING = 100.0, -- When plotting the movement arrows, how far apart should the control points be?
 		MOVE_ARROW_GALAXY_CONTROL_POINT_SPACING = 5.0, -- When plotting the movement arrows, how far apart should the control points be?
