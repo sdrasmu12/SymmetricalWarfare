@@ -188,6 +188,11 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "MANV_1"
+	
+	ai_weight = {
+		weight = 1
+	}
+	
 }
 
 utility_component_template = {
@@ -204,6 +209,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "MANV_1"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -221,6 +230,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_1" }
 	component_set = "MANV_1"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 # Manueverability Thrusters 2
@@ -238,6 +251,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "MANV_2"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -254,6 +271,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "MANV_2"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -271,6 +292,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_2" }
 	component_set = "MANV_2"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 # Manueverability Thrusters 3
@@ -288,6 +313,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "MANV_3"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -304,6 +333,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "MANV_3"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -319,8 +352,13 @@ utility_component_template = {
 		ship_evasion_add = @manv_3L
 	}
 	
+	
 	prerequisites = { "tech_thrusters_3" }
 	component_set = "MANV_3"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 # Manueverability Thrusters 4
@@ -338,6 +376,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "MANV_4"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -354,6 +396,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "MANV_4"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -371,6 +417,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_4" }
 	component_set = "MANV_4"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 # Manueverability Thrusters 5
@@ -388,6 +438,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_5" }
 	component_set = "MANV_5"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -404,6 +458,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_5" }
 	component_set = "MANV_5"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 utility_component_template = {
@@ -420,6 +478,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_thrusters_5" }
 	component_set = "MANV_5"
+	
+	ai_weight = {
+		weight = 1
+	}
 }
 
 
@@ -435,6 +497,10 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+	
+	ai_weight = {
+		weight = 100
+	}
 }
 
 utility_component_template = {
@@ -448,6 +514,8 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+	
+
 }
 
 utility_component_template = {
@@ -461,6 +529,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_1" }
 	component_set = "ARMOR_1"
+
 }
 
 # Durasteel Armor
@@ -475,6 +544,8 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_2" }
 	component_set = "ARMOR_2"
+	
+
 }
 
 utility_component_template = {
@@ -488,6 +559,8 @@ utility_component_template = {
 	
 	prerequisites = { "tech_ship_armor_2" }
 	component_set = "ARMOR_2"
+	
+
 }
 
 utility_component_template = {

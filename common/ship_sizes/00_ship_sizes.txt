@@ -10,11 +10,11 @@
 @destroyer_combat_rotation = 0.05
 @destroyer_collision_radius = 3
 
-@cruiser_combat_speed = 0.7
+@cruiser_combat_speed = 1
 @cruiser_combat_rotation = 0.025
 @cruiser_collision_radius = 4
 
-@battleship_combat_speed = 0.35
+@battleship_combat_speed = 1
 @battleship_combat_rotation = 0.02
 @battleship_collision_radius = 5
 
@@ -29,7 +29,7 @@
 ############
 
 corvette = {
-	max_speed = 5.25
+	max_speed = 4.5
 	acceleration = 0.35
 	rotation_speed = 0.1
 	combat_max_speed = @corvette_combat_speed
@@ -47,6 +47,10 @@ corvette = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start	
 	
+	modifier = {
+		ship_armor_mult = -0.06
+	}
+	
 	prerequisites = { "tech_spaceport_1" }
 	
 	class = shipclass_military
@@ -57,7 +61,7 @@ corvette = {
 }
 
 destroyer = {
-	max_speed = 4.5
+	max_speed = 4
 	acceleration = 0.3
 	rotation_speed = 0.2
 	combat_max_speed = @destroyer_combat_speed
@@ -65,7 +69,7 @@ destroyer = {
 	collision_radius = @destroyer_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.62
-		ship_armor_add = 8
+		ship_armor_mult = 0.19
 	}
 	max_hitpoints = 600
 	size_multiplier = 2
@@ -89,7 +93,7 @@ destroyer = {
 }
 
 cruiser = {
-	max_speed = 3.75
+	max_speed = 3.5
 	acceleration = 0.25
 	rotation_speed = 0.175
 	combat_max_speed = @cruiser_combat_speed
@@ -97,7 +101,7 @@ cruiser = {
 	collision_radius = @cruiser_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.87
-		ship_armor_add = 20
+		ship_armor_mult = 0.22
 	}
 	max_hitpoints = 1200
 	size_multiplier = 4
@@ -129,7 +133,7 @@ battleship = {
 	collision_radius = @battleship_collision_radius
 	modifier = {
 		ship_evasion_mult = -0.96
-		ship_armor_add = 62
+		ship_armor_mult = 0.29
 	}
 	max_hitpoints = 2400
 	size_multiplier = 8
