@@ -48,7 +48,7 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Lasers & Missiles
-	weapon_preferences = { weapon_type_energy weapon_type_explosive }
+	weapon_preferences = { weapon_type_energy  }
 	ai_weight = {
 		modifier = {
 			factor = 2.0
