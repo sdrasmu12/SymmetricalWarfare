@@ -35,9 +35,6 @@ utility_component_template = {
 	prerequisites = { "tech_sensors_2" }
 	component_set = "ship_sensor_components"
 	
-	ship_modifier = {
-		ship_accuracy_add = @hit2
-	}
 	
 	ai_weight = {
 		weight = 10
@@ -56,9 +53,6 @@ utility_component_template = {
 	prerequisites = { "tech_sensors_3" }
 	component_set = "ship_sensor_components"
 	
-	ship_modifier = {
-		ship_accuracy_add = @hit3
-	}
 	
 	ai_weight = {
 		weight = 100
@@ -73,10 +67,6 @@ utility_component_template = {
 	power = 0
 	cost = 10
 	sensor_range = @sensor4
-	
-	ship_modifier = {
-		ship_accuracy_add = @hit4
-	}
 	
 	prerequisites = { "tech_sensors_4" }
 	component_set = "ship_sensor_components"
