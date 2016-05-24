@@ -148,6 +148,19 @@
 @power_M5 = -160
 @power_L5 = -320
 
+##################
+#	HP_Add       #
+##################
+
+@HP_S1 = 6.2
+@HP_M1 = 12.4
+@HP_L1 = 24.8
+            
+@HP_S2 = 12.4
+@HP_M2 = 24.8
+@HP_L2 = 49.6
+            
+
 
 
 
@@ -706,7 +719,7 @@ utility_component_template = {
 	cost = @cost_3S
 	
 	modifier = {
-		ship_hitpoints_add = 50
+		ship_hitpoints_add = @HP_S1
 	}
 	
 	prerequisites = { "tech_crystal_armor_1" }
@@ -722,7 +735,7 @@ utility_component_template = {
 	cost = @cost_3M
 	
 	modifier = {
-		ship_hitpoints_add = 100
+		ship_hitpoints_add = @HP_M1
 	}
 	
 	prerequisites = { "tech_crystal_armor_1" }
@@ -738,7 +751,7 @@ utility_component_template = {
 	cost = @cost_3L
 	
 	modifier = {
-		ship_hitpoints_add = 200
+		ship_hitpoints_add = @HP_L1
 	}
 	
 	prerequisites = { "tech_crystal_armor_1" }
@@ -755,7 +768,7 @@ utility_component_template = {
 	cost = @cost_5S
 	
 	modifier = {
-		ship_hitpoints_add = 100
+		ship_hitpoints_add = @HP_S2
 	}
 	
 	prerequisites = { "tech_crystal_armor_2" }
@@ -771,7 +784,7 @@ utility_component_template = {
 	cost = @cost_5M
 	
 	modifier = {
-		ship_hitpoints_add = 200
+		ship_hitpoints_add = @HP_M2
 	}
 	
 	prerequisites = { "tech_crystal_armor_2" }
@@ -787,7 +800,7 @@ utility_component_template = {
 	cost = @cost_5L
 	
 	modifier = {
-		ship_hitpoints_add = 400
+		ship_hitpoints_add = @HP_L2
 	}
 	
 	prerequisites = { "tech_crystal_armor_2" }
