@@ -7,6 +7,21 @@
 @count = 4
 
 
+##################
+# Bomber Damage  #
+##################
+@B1_DMG_Min = 51.86
+@B1_DMG_Max = 86.44
+@B2_DMG_Min = 62.15
+@B2_DMG_Max = 103.59
+@B3_DMG_Min = 72.41
+@B3_DMG_Max = 120.68
+@B1_AP = 3.2
+@B2_AP = 3.2
+@B3_AP = 3.2
+
+
+
 strike_craft_component_template = {
 	key = "LARGE_SCOUT_HANGAR_1"
 	size = LARGE
@@ -177,9 +192,9 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 92 max = 154 }
+	damage = { min = @B1_DMG_Min max = @B1_DMG_Max }
 	cooldown = 2
-	range = 2
+	range = 8
 	accuracy = 0.75
 	
 	health = 9
@@ -192,7 +207,7 @@ strike_craft_component_template = {
 	
 	shield_damage = 0
 	shield_penetration = 1.0
-	armor_penetration = 6.6
+	armor_penetration = @B1_AP
 	
 	ship_behavior = "bombers_behavior"
 	
@@ -217,9 +232,9 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 114 max = 190 }
+	damage = { min = @B2_DMG_Min max = @B2_DMG_Max }
 	cooldown = 2
-	range = 2
+	range = 8
 	accuracy = 0.75
 	
 	health = 11
@@ -232,7 +247,7 @@ strike_craft_component_template = {
 	
 	shield_damage = 0
 	shield_penetration = 1
-	armor_penetration = 6.42
+	armor_penetration = @B2_AP
 	
 	ship_behavior = "bombers_behavior"
 	
@@ -257,9 +272,9 @@ strike_craft_component_template = {
 	regeneration_per_day = 0.034
 	launch_time = 5.0
 	
-	damage = { min = 128 max = 213 }
+	damage = { min = @B3_DMG_Min max = @B3_DMG_Max }
 	cooldown = 2
-	range = 2
+	range = 8
 	accuracy = 0.75
 	
 	health = 13
@@ -272,7 +287,7 @@ strike_craft_component_template = {
 	
 	shield_damage = 1.0
 	shield_penetration = 1
-	armor_penetration = 6.67
+	armor_penetration = @B3_AP
 	
 	ship_behavior = "bombers_behavior"
 	
