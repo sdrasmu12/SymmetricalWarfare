@@ -203,6 +203,10 @@ tech_mass_drivers_3 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_fusion_power }
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -266,6 +270,10 @@ tech_mass_drivers_4 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power }
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -331,6 +339,10 @@ tech_mass_drivers_5 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_antimatter_power}
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -394,6 +406,10 @@ tech_kinetic_artillery_1 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power }
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -456,6 +472,10 @@ tech_kinetic_artillery_2 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_antimatter_power}
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -529,6 +549,10 @@ tech_autocannons_1 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_fusion_power}
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -592,6 +616,10 @@ tech_autocannons_2 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = physics
@@ -638,6 +666,10 @@ tech_autocannons_3 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_antimatter_power}
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -702,6 +734,10 @@ tech_flak_batteries_1 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power}
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -764,6 +800,10 @@ tech_flak_batteries_2 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_fusion_power}
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -954,6 +994,10 @@ tech_missiles_3 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_fusion_power}
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -1017,6 +1061,10 @@ tech_missiles_4 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power}
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
@@ -1082,6 +1130,10 @@ tech_missiles_5 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_antimatter_power }
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -1146,6 +1198,10 @@ tech_swarmer_missiles_1 = {
 	ai_weight = {
 		factor = 2		#weapons are good
 		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_cold_fusion_power}
+		}
+		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
 		}
@@ -1209,6 +1265,10 @@ tech_swarmer_missiles_2 = {
 	
 	ai_weight = {
 		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.1
+			NOT = { has_technology = tech_antimatter_power }
+		}
 		modifier = {
 			factor = 0.65
 			has_ethic = ethic_fanatic_pacifist
