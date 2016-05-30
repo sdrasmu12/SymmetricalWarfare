@@ -32,7 +32,7 @@
 @cost_M1 = 10
 @cost_L1 = 20
            
-@cost_S2 = 7.5
+@cost_S2 = 7
 @cost_M2 = 15
 @cost_L2 = 30
            
@@ -40,7 +40,7 @@
 @cost_M3 = 20
 @cost_L3 = 40
            
-@cost_S4 = 12.5
+@cost_S4 = 12
 @cost_M4 = 25
 @cost_L4 = 50
            

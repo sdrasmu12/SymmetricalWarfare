@@ -22,6 +22,8 @@ weapon_component_template = {
 	type = point_defence
 	projectile_gfx = "red_laser_pd"
 	tags = { weapon_type_point_defense }
+	
+	class_restriction = { shipclass_military_corvette }
 }
 
 ### Point Defence 2
