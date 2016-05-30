@@ -53,7 +53,7 @@ corvette = {
 	
 	prerequisites = { "tech_spaceport_1" }
 	
-	class = shipclass_military_corvette
+	class = shipclass_military
 	required_component_set = "ftl_components"
 	required_component_set = "combat_computers"
 	required_component_set = "thruster_components"
@@ -85,7 +85,7 @@ destroyer = {
 	
 	prerequisites = { "tech_spaceport_3" }
 	
-	class = shipclass_military_destroyer
+	class = shipclass_military
 	required_component_set = "ftl_components"
 	required_component_set = "combat_computers"
 	required_component_set = "thruster_components"
@@ -117,7 +117,7 @@ cruiser = {
 	
 	prerequisites = { "tech_spaceport_5" }
 	
-	class = shipclass_military_cruiser
+	class = shipclass_military
 	required_component_set = "ftl_components"
 	required_component_set = "combat_computers"
 	required_component_set = "thruster_components"
@@ -149,7 +149,7 @@ battleship = {
 	
 	prerequisites = { "tech_spaceport_6" }
 	
-	class = shipclass_military_battleship
+	class = shipclass_military
 	required_component_set = "ftl_components"
 	required_component_set = "combat_computers"
 	required_component_set = "thruster_components"
