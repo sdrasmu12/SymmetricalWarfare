@@ -3,6 +3,7 @@
 # Component Tags can be given scripted in component_templates and is used to group components together for the use of common modifiers
 #
 
+weapon_type_autocannon
 weapon_type_artillery
 weapon_type_torpedo
 weapon_type_energy_torpedo

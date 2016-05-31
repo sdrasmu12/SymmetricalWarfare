@@ -101,7 +101,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "SmallMissileBehavior"
 	size = small
-	icon = "SmallMissileBehavior"
+	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = 0
 	cost = 1
@@ -305,5 +305,6 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	component_set = "combat_computers"
 }
+
 
 

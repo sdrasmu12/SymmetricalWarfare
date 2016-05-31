@@ -1,9 +1,25 @@
 ############################
-# CORVETTE UTILITIES ROLES #
+# DESTROYER UTILITIES ROLES #
 ############################
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_DEFAULT_CORV"
+	key = "ArtilleryBehavior_DEST"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "ArtilleryBehavior"
+
+
+	
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_destroyers"
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_DEFAULT_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
@@ -17,11 +33,11 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military }
 	
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_AGGRESSIVE_BASIC_CORV"
+	key = "COMBAT_COMPUTER_AGGRESSIVE_BASIC_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_basic"
 	icon_frame = 1
@@ -39,11 +55,11 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_DEFENSIVE_BASIC_CORV"
+	key = "COMBAT_COMPUTER_DEFENSIVE_BASIC_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_defensive_basic"
 	icon_frame = 1
@@ -61,13 +77,13 @@ utility_component_template = {
 
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 
 
 utility_component_template = {
-	key = "SmallLaserBehavior_CORV"
+	key = "SmallLaserBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_defensive_basic"
 	icon_frame = 1
@@ -79,17 +95,17 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = laser_corvette_1
+			has_country_flag = laser_destroyer_1
 		}
 	}
 
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 utility_component_template = {
-	key = "SmallMissileBehavior_CORV"
+	key = "SmallMissileBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
@@ -101,18 +117,18 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = missile_corvette_1
+			has_country_flag = missile_destroyer_1
 		}
 	}
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 
 utility_component_template = {
-	key = "SmallDriverBehavior_CORV"
+	key = "SmallDriverBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
@@ -124,18 +140,18 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = mass_driver_corvette_1
+			has_country_flag = mass_driver_destroyer_1
 		}
 	}
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 
 utility_component_template = {
-	key = "SmallPlasmaBehavior_CORV"
+	key = "SmallPlasmaBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
@@ -147,18 +163,18 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = plasma_corvette_1
+			has_country_flag = plasma_destroyer_1
 		}
 	}
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers_corvettes"
+	prerequisites = { "tech_combat_computers" }
+	component_set = "combat_computers_destoyers"
 }
 
 
 utility_component_template = {
-	key = "SmallTorpedoBehavior_CORV"
+	key = "SmallTorpedoBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
@@ -170,18 +186,18 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = torpedo_corvette_1
+			has_country_flag = torpedo_destroyer_1
 		}
 	}
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
 
 
 utility_component_template = {
-	key = "DisruptorBehavior_CORV"
+	key = "DisruptorBehavior_DEST"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
@@ -193,11 +209,28 @@ utility_component_template = {
 		weight = 1
 		modifier = {
 			factor = 100
-			has_country_flag = disruptor_corvette_1
+			has_country_flag = disruptor_destroyer_1
 		}
 	}
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers_corvettes"
+	component_set = "combat_computers_destoyers"
 }
+
+utility_component_template = {
+	key = "SmallEnergyTorpedoBehavior_DEST"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "SmallEnergyTorpedoBehavior"
+
+
+	
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_destoyers"
+}
+

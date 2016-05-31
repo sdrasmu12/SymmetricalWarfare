@@ -256,3 +256,49 @@ ship_section_template = {
 	
 	cost = 30
 }
+
+ship_section_template = {
+	key = "MassDriverCorvette"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	weapon_preferences = { weapon_type_mass_driver }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = mass_driver_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = mass_driver_corvette_2
+		}
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	
+	cost = 30
+}

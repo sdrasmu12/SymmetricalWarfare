@@ -3,7 +3,7 @@
 #############
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_DEFAULT"
+	key = "COMBAT_COMPUTER_DEFAULT_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
@@ -17,11 +17,11 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military }
 	
-	component_set = "combat_computers"
+	component_set = "combat_computers_cruisers"
 }
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_AGGRESSIVE_BASIC"
+	key = "COMBAT_COMPUTER_AGGRESSIVE_BASIC_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_basic"
 	icon_frame = 1
@@ -38,12 +38,12 @@ utility_component_template = {
 	}
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_1" }
+	prerequisites = { "tech_combat_computers" }
 	component_set = "combat_computers"
 }
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_DEFENSIVE_BASIC"
+	key = "COMBAT_COMPUTER_DEFENSIVE_BASIC_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_defensive_basic"
 	icon_frame = 1
@@ -60,30 +60,13 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
+	prerequisites = { "tech_combat_computers" }
 	component_set = "combat_computers"
 }
 
 
-
 utility_component_template = {
-	key = "SizeSameShieldBreaker"
-	size = small
-	icon = "GFX_ship_part_computer_defensive_basic"
-	icon_frame = 1
-	power = 0
-	cost = 3
-	ship_behavior = "SizeSameShieldBreaker"
-
-
-
-	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
-}
-
-utility_component_template = {
-	key = "SizeDifferentShieldBreaker"
+	key = "LargeLaserBehavior_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_defensive_basic"
 	icon_frame = 1
@@ -94,70 +77,138 @@ utility_component_template = {
 
 
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
+	prerequisites = { "tech_combat_computers_1" }
+	component_set = "combat_computers_cruisers"
 }
 
+
 utility_component_template = {
-	key = "SizeDifferentArmorBreaker"
+	key = "LargeMissileBehavior_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = 0
 	cost = 1
-	ship_behavior = "SizeDifferentArmorBreaker"
+	ship_behavior = "LargeMissileBehavior"
 
 
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
+	prerequisites = { "tech_combat_computers_1" }
+	component_set = "combat_computers_cruisers"
 }
 
+
 utility_component_template = {
-	key = "SizeSameArmorBreaker"
+	key = "LargeDriverBehavior_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = 0
 	cost = 1
-	ship_behavior = "SizeSameArmorBreaker"
+	ship_behavior = "LargeDriverBehavior"
 
 
 	
 	class_restriction = { shipclass_military }
-	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
+	prerequisites = { "tech_combat_computers_1" }
+	component_set = "combat_computers_cruisers"
 }
 
+
 utility_component_template = {
-	key = "Carrier"
+	key = "LargePlasmaBehavior_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = 0
 	cost = 1
-	ship_behavior = "Carrier"
+	ship_behavior = "LargePlasmaBehavior"
 
 
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
+	component_set = "combat_computers_cruisers"
 }
 
+
 utility_component_template = {
-	key = "Support"
+	key = "LargeEnergyTorpedoBehavior_CRUS"
 	size = small
 	icon = "GFX_ship_part_computer_aggressive_advanced"
 	icon_frame = 1
 	power = 0
 	cost = 1
-	ship_behavior = "Support"
+	ship_behavior = "LargeEnergyTorpedoBehavior"
+
+
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_cruisers"
+}
+
+
+utility_component_template = {
+	key = "LargeTorpedoBehavior_CRUS"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "LargeTorpedoBehavior"
 
 
 	
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_combat_computers_2" }
-	component_set = "combat_computers"
+	component_set = "combat_computers_cruisers"
+}
+
+utility_component_template = {
+	key = "DisruptorBehavior_CRUS"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "DisruptorBehavior"
+
+
+	
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_cruisers"
+}
+
+utility_component_template = {
+	key = "ArtilleryBehavior_CRUS"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "ArtilleryBehavior"
+
+
+	
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_cruisers"
+}
+
+utility_component_template = {
+	key = "CarrierBehavior_CRUS"
+	size = small
+	icon = "GFX_ship_part_computer_aggressive_advanced"
+	icon_frame = 1
+	power = 0
+	cost = 1
+	ship_behavior = "CarrierBehavior"
+
+
+	
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_combat_computers_2" }
+	component_set = "combat_computers_cruisers"
 }

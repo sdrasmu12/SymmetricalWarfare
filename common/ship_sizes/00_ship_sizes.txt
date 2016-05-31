@@ -55,7 +55,7 @@ corvette = {
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
-	required_component_set = "combat_computer_corvettes"
+	required_component_set = "combat_computers_corvettes"
 	required_component_set = "thruster_components"
 	required_component_set = "ship_sensor_components"
 }
@@ -87,7 +87,7 @@ destroyer = {
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
-	required_component_set = "combat_computers"
+	required_component_set = "combat_computers_destroyers"
 	required_component_set = "thruster_components"
 	required_component_set = "ship_sensor_components"
 }
@@ -119,7 +119,7 @@ cruiser = {
 	
 	class = shipclass_military
 	required_component_set = "ftl_components"
-	required_component_set = "combat_computers"
+	required_component_set = "combat_computers_cruisers"
 	required_component_set = "thruster_components"
 	required_component_set = "ship_sensor_components"
 }
