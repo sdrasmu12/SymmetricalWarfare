@@ -1,23 +1,16 @@
-#BOW
-
 ship_section_template = {
-	key = "BATTLESHIP_BOW_L1M1S2"
+	key = "BATTLESHIP_AUTOCANNON_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
 	entity = "battleship_bow_L1M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	icon_frame = 1
 	
-	# Big guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_type_autocannon }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = democratic_crusaders
-			}
+			factor = 20
+			has_country_flag = autocannon_battleship_1
 		}
 	}
 
@@ -48,30 +41,26 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	small_utility_slots = 0
+	small_utility_slots = 1
 	medium_utility_slots = 2
-	large_utility_slots = 4
+	large_utility_slots = 2
 	
 	cost = 240
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_BOW_L1S4"
+	key = "BATTLESHIP_MASS_DRIVER_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
 	entity = "battleship_bow_L1S4_entity"
 	icon = "GFX_ship_part_core_bow"
 	icon_frame = 1
 	
-	# Big missiles
-	weapon_preferences = { weapon_type_explosive }
+	weapon_preferences = { weapon_type_mass_driver }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = decadent_hierarchy
-			}
+			factor = 20
+			has_country_flag = mass_driver_battleship_1
 		}
 	}
 	
@@ -110,31 +99,27 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 	}
 	
-	small_utility_slots = 0
+	small_utility_slots = 1
 	medium_utility_slots = 2
-	large_utility_slots = 4
+	large_utility_slots = 2
 	
 	cost = 240
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_BOW_L2"
+	key = "BATTLESHIP_MISSILES_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
 	entity = "battleship_bow_L2_entity"
 	icon = "GFX_ship_part_core_bow"
 	
 	# Big lasers
-	weapon_preferences = { weapon_type_energy }
+	weapon_preferences = { weapon_type_missiles }
+	
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = hegemonic_imperialists			
-				has_ai_personality = fanatic_purifiers								
-				has_ai_personality = ruthless_capitalists				
-				has_ai_personality = metalhead
-			}
+			factor = 20
+			has_country_flag = missiles_battleship_1
 		}
 	}
 
@@ -152,84 +137,179 @@ ship_section_template = {
 		locatorname = "large_gun_02"
 	}
 	
-	small_utility_slots = 0
+	small_utility_slots = 1
 	medium_utility_slots = 2
-	large_utility_slots = 4
+	large_utility_slots = 2
 	
 	cost = 240
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_BOW_M1S2SHB"
+	key = "BATTLESHIP_MISSILES_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
-	entity = "battleship_bow_M1S2SHB_entity"
+	entity = "battleship_bow_L2_entity"
 	icon = "GFX_ship_part_core_bow"
 	
-	# Missiles & Strike Craft
-	weapon_preferences = { weapon_type_explosive }
+	# Big lasers
+	weapon_preferences = { weapon_type_plasma }
+	
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-			}
+			factor = 20
+			has_country_flag = plasma_battleship_1
 		}
 	}
-	
+
 	component_slot = {
-		name = "MEDIUM_GUN_01"
-		slot_size = medium
-		slot_type = weapon
-		locatorname = "medium_gun_01"
-	}
-	
-	component_slot = {
-		name = "SMALL_GUN_01"
-		slot_size = small
-		slot_type = weapon
-		locatorname = "small_gun_01"
-	}
-	
-	component_slot = {
-		name = "SMALL_GUN_02"
-		slot_size = small
-		slot_type = weapon
-		locatorname = "small_gun_02"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_01"
+		name = "LARGE_GUN_01"
 		slot_size = large
-		slot_type = strike_craft
-		rotation = 90
-		locatorname = "strike_craft_locator_01"
+		slot_type = weapon
+		locatorname = "large_gun_01"
 	}
 	
-	small_utility_slots = 0
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	small_utility_slots = 1
 	medium_utility_slots = 2
-	large_utility_slots = 4
+	large_utility_slots = 2
 	
 	cost = 240
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_BOW_M2S4"
+	key = "BATTLESHIP_ARTILLERY_BOW"
+	ship_size = battleship
+	fits_on_slot = bow
+	entity = "battleship_bow_L2_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	# Big lasers
+	weapon_preferences = { weapon_type_artillery }
+	
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = artillery_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	small_utility_slots = 1
+	medium_utility_slots = 2
+	large_utility_slots = 2
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_TORPEDO_BOW"
+	ship_size = battleship
+	fits_on_slot = bow
+	entity = "battleship_bow_L2_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	# Big lasers
+	weapon_preferences = { weapon_type_torpedo }
+	
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = torpedo_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	small_utility_slots = 1
+	medium_utility_slots = 2
+	large_utility_slots = 2
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_ETORPEDO_BOW"
+	ship_size = battleship
+	fits_on_slot = bow
+	entity = "battleship_bow_L2_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	# Big lasers
+	weapon_preferences = { weapon_type_energy_torpedo }
+	
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = energy_torpedo_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	small_utility_slots = 1
+	medium_utility_slots = 2
+	large_utility_slots = 2
+	
+	cost = 240
+}
+
+
+ship_section_template = {
+	key = "BATTLESHIP_LASER_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
 	entity = "battleship_bow_M2S4_entity"
 	icon = "GFX_ship_part_core_bow"
 	
 	# Small guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_type_laser }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = spiritual_seekers
-				has_ai_personality = hive_mind
-			}
+			factor = 20
+			has_country_flag = laser_battleship_1
 		}
 	}
 	
@@ -275,30 +355,26 @@ ship_section_template = {
 		locatorname = "small_gun_04"
 	}
 	
-	small_utility_slots = 0
+	small_utility_slots = 1
 	medium_utility_slots = 2
-	large_utility_slots = 4
+	large_utility_slots = 2
 	
 	cost = 240
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_BOW_M3S2"
+	key = "BATTLESHIP_DISRUPTOR_BOW"
 	ship_size = battleship
 	fits_on_slot = bow
 	entity = "battleship_bow_M3S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	
 	# Small lasers
-	weapon_preferences = { weapon_type_energy }
+	weapon_preferences = { weapon_type_disruptor }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = federation_builders
-				has_ai_personality = erudite_explorers
-				has_ai_personality = xenophobic_isolationists				
-			}
+			factor = 20
+			has_country_flag = disruptor_battleship_1
 		}
 	}
 	
@@ -337,6 +413,56 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
+	small_utility_slots = 1
+	medium_utility_slots = 2
+	large_utility_slots = 2
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_CARRIER_BOW"
+	ship_size = battleship
+	fits_on_slot = bow
+	entity = "battleship_bow_M1S2SHB_entity"
+	icon = "GFX_ship_part_core_bow"
+	
+	# Missiles & Strike Craft
+	weapon_preferences = { weapon_type_bomber weapon_type_torpedo }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = carrier_battleship_1
+		}
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		slot_size = large
+		slot_type = strike_craft
+		rotation = 90
+		locatorname = "strike_craft_locator_01"
+	}
+	
 	small_utility_slots = 0
 	medium_utility_slots = 2
 	large_utility_slots = 4
@@ -347,23 +473,17 @@ ship_section_template = {
 #MID
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_L2S4"
+	key = "BATTLESHIP_LASER_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_L2S4_entity"
 	icon = "GFX_ship_part_core_mid"
-	
-	# Big lasers
-	weapon_preferences = { weapon_type_energy }
+		
+	weapon_preferences = { weapon_type_laser weapon_type_disruptor }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = hegemonic_imperialists			
-				has_ai_personality = fanatic_purifiers								
-				has_ai_personality = ruthless_capitalists	
-				has_ai_personality = metalhead
-			}
+			factor = 20
+			has_country_flag = laser_battleship_1
 		}
 	}
 	
@@ -420,21 +540,18 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_L1M4"
+	key = "BATTLESHIP_DISRUPTOR_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_L1M4_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	# Small guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_type_disruptor }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = spiritual_seekers
-				has_ai_personality = hive_mind
-			}
+			factor = 20
+			has_country_flag = disruptor_battleship_1
 		}
 	}
 	
@@ -481,23 +598,78 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_L2M2"
+	key = "BATTLESHIP_TORPEDO_MID"
+	ship_size = battleship
+	fits_on_slot = mid
+	entity = "battleship_mid_L1M4_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Small guns
+	weapon_preferences = { weapon_type_torpedo }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = torpedo_battleship_1
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_03"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_04"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MISSILES_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big missiles
-	weapon_preferences = { weapon_type_explosive }
+	weapon_preferences = { weapon_type_missiles }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = decadent_hierarchy
-			}
+			factor = 20
+			has_country_flag = missile_battleship_1
 		}
-	}	
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -534,22 +706,169 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_L3"
+	key = "BATTLESHIP_MASS_DRIVER_MID"
+	ship_size = battleship
+	fits_on_slot = mid
+	entity = "battleship_mid_L2M2_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Big missiles
+	weapon_preferences = { weapon_type_mass_driver }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = mass_driver_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_AUTOCANNON_MID"
+	ship_size = battleship
+	fits_on_slot = mid
+	entity = "battleship_mid_L2M2_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Big missiles
+	weapon_preferences = { weapon_type_autocannon }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = autocannon_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_PLASMA_MID"
+	ship_size = battleship
+	fits_on_slot = mid
+	entity = "battleship_mid_L2M2_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Big missiles
+	weapon_preferences = { weapon_type_plasma }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = plasma_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
+	
+	cost = 240
+}
+
+
+ship_section_template = {
+	key = "BATTLESHIP_ARTILLERY_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_L3_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	# Big guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_type_artillery }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = democratic_crusaders
-			}
+			factor = 20
+			has_country_flag = artillery_battleship_1
 		}
 	}
 	
@@ -582,22 +901,70 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_M4SHB"
+	key = "BATTLESHIP_ETORPEDO_MID"
+	ship_size = battleship
+	fits_on_slot = mid
+	entity = "battleship_mid_L3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Big guns
+	weapon_preferences = { weapon_type_energy_torpedo }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = energy_torpedo_battleship_1
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_03"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 2
+	large_utility_slots = 4
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_PD_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	# Lasers & Strike Craft
-	weapon_preferences = { weapon_type_energy }
+	weapon_preferences = { weapon_type_fighter weapon_type_torpedo }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = federation_builders
-				has_ai_personality = erudite_explorers
-				has_ai_personality = xenophobic_isolationists				
-			}
+			factor = 5
+			has_country_flag = torpedo_battleship_1
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = energy_torpedo_battleship_1
+		}
+		modifier = {
+			factor = 20
+			has_country_flag = PD_battleship_1
 		}
 	}
 	
@@ -645,22 +1012,18 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_MID_S4LHB"
+	key = "BATTLESHIP_CARRIER_MID"
 	ship_size = battleship
 	fits_on_slot = mid
 	entity = "battleship_mid_S4LHB_entity"
 	icon = "GFX_ship_part_core_mid"
 	
 	# Missiles & Strike Craft
-	weapon_preferences = { weapon_type_explosive }
+	weapon_preferences = { weapon_type_bomber weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-			}
+			factor = 20
+			has_country_flag = carrier_battleship_1
 		}
 	}
 
@@ -716,24 +1079,18 @@ ship_section_template = {
 #STERN
 
 ship_section_template = {
-	key = "BATTLESHIP_STERN_M1S2"
+	key = "BATTLESHIP_MASS_DRIVER_STERN"
 	ship_size = battleship
 	fits_on_slot = stern
 	entity = "battleship_stern_M1S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	
 	# Guns
-	weapon_preferences = { weapon_type_kinetic weapon_type_point_defense }
+	weapon_preferences = { weapon_type_mass_driver weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = democratic_crusaders
-				has_ai_personality = spiritual_seekers
-				has_ai_personality = hive_mind
-			}
+			factor = 20
+			has_country_flag = mass_driver_battleship_1
 		}
 	}
 
@@ -766,26 +1123,150 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_STERN_L1"
+	key = "BATTLESHIP_AUTOCANNON_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_stern_M1S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Guns
+	weapon_preferences = { weapon_type_autocannon weapon_type_point_defense }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = autocannon_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_TORPEDO_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_stern_M1S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Guns
+	weapon_preferences = { weapon_type_torpedo weapon_type_point_defense }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = torpedo_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_ENERGY_TORPEDO_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_stern_M1S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Guns
+	weapon_preferences = { weapon_type_energy_torpedo weapon_type_point_defense }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = energy_torpedo_battleship_1
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_MISSILES_STERN"
 	ship_size = battleship
 	fits_on_slot = stern
 	entity = "battleship_stern_L1_entity"
 	icon = "GFX_ship_part_core_stern"
 	
 	# Lasers
-	weapon_preferences = { weapon_type_energy }
+	weapon_preferences = { weapon_type_missiles }
 	ai_weight = {
 		modifier = {
-			factor = 8.0
-			OR = {
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = erudite_explorers
-				has_ai_personality = fanatic_purifiers
-				has_ai_personality = xenophobic_isolationists				
-				has_ai_personality = federation_builders
-				has_ai_personality = ruthless_capitalists
-				has_ai_personality = metalhead
-			}
+			factor = 20
+			has_country_flag = missile_battleship_1
 		}
 	}
 	
@@ -804,23 +1285,113 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_STERN_M2"
+	key = "BATTLESHIP_DISRUPTOR_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_disruptor_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Lasers
+	weapon_preferences = { weapon_type_disruptor }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = disruptor_battleship_1
+		}
+		modifier = {
+			factor = 5
+			has_country_flag = plasma_battleship_1
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_CARRIER_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_disruptor_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Lasers
+	weapon_preferences = { weapon_type_torpedo weapon_type_energy_torpedo }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = carrier_battleship_1
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+ship_section_template = {
+	key = "BATTLESHIP_ARTILLERY_STERN"
+	ship_size = battleship
+	fits_on_slot = stern
+	entity = "battleship_disruptor_L1_entity"
+	icon = "GFX_ship_part_core_stern"
+	
+	# Lasers
+	weapon_preferences = { weapon_type_artillery }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = artillery_battleship_1
+		}
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	
+	small_utility_slots = 0
+	medium_utility_slots = 0
+	large_utility_slots = 6
+	
+	cost = 240
+}
+
+
+ship_section_template = {
+	key = "BATTLESHIP_LASER_STERN"
 	ship_size = battleship
 	fits_on_slot = stern
 	entity = "battleship_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
 	
 	# Missiles
-	weapon_preferences = { weapon_type_explosive }
+	weapon_preferences = { weapon_type_laser }
 	ai_weight = {
 		modifier = {
-			factor = 100.0
-			OR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = decadent_hierarchy
-			}
+			factor = 20
+			has_country_flag = laser_battleship_1
 		}
 	}
 	
@@ -846,7 +1417,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "BATTLESHIP_STERN_S4"
+	key = "BATTLESHIP_PD_STERN"
 	ship_size = battleship
 	fits_on_slot = stern
 	entity = "battleship_stern_S4_entity"
@@ -855,11 +1426,10 @@ ship_section_template = {
 	# Point Defense
 	weapon_preferences = { weapon_type_point_defense }
 	ai_weight = {
-		factor = 1
 		modifier = {
-			factor = 100.0
-			has_ai_personality = migrating_flock
-		}		
+			factor = 20
+			has_country_flag = extra_pd_battleship_1
+		}
 	}
 	
 	component_slot = {

@@ -9,6 +9,7 @@ weapon_type_torpedo
 weapon_type_energy_torpedo
 weapon_type_disruptor
 weapon_type_bomber
+weapon_type_fighter
 weapon_type_laser
 weapon_type_missile
 weapon_type_plasma
