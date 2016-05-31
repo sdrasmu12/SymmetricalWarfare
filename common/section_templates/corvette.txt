@@ -6,17 +6,15 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	
 	# Guns
-	weapon_preferences = { weapon_type_kinetic }
+	weapon_preferences = { weapon_type_missile weapon_type_point_defense }
 	ai_weight = {
 		modifier = {
-			factor = 2.0
-			OR = {
-				has_ai_personality = honorbound_warriors
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = spiritual_seekers
-				has_ai_personality = democratic_crusaders
-				has_ai_personality = hive_mind
-			}
+			factor = 20
+			has_country_flag = missile_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = missile_corvette_2
 		}
 	}
 	
@@ -41,31 +39,102 @@ ship_section_template = {
 }
 
 ship_section_template = {
+	key = "CORVETTE_TORPEDO"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Guns
+	weapon_preferences = { weapon_type_torpedo weapon_type_point_defense }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = torpedo_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = torpedo_corvette_2
+		}
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	
+	cost = 30
+}
+
+ship_section_template = {
+	key = "CORVETTE_AUTOCANNON"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	# Guns
+	weapon_preferences = { weapon_type_autocannon }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = autocannon_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = autocannon_corvette_2
+		}
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	
+	cost = 30
+}
+
+
+ship_section_template = {
 	key = "CORVETTE_MID_S3"
 	ship_size = corvette
 	fits_on_slot = mid
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	# Lasers & Missiles
-	weapon_preferences = { weapon_type_energy  }
+	weapon_preferences = { weapon_type_laser }
 	ai_weight = {
 		modifier = {
-			factor = 2.0
-			OR = {
-				has_ai_personality = hegemonic_imperialists
-				has_ai_personality = erudite_explorers
-				has_ai_personality = fanatic_purifiers
-				has_ai_personality = xenophobic_isolationists				
-				has_ai_personality = federation_builders
-				has_ai_personality = ruthless_capitalists	
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = harmonious_hierarchy
-				has_ai_personality = decadent_hierarchy
-				has_ai_personality = metalhead
-				has_ai_personality = migrating_flock				
-			}
+			factor = 20
+			has_country_flag = laser_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = laser_corvette_2
 		}
 	}
 	
@@ -96,3 +165,94 @@ ship_section_template = {
 	cost = 30
 }
 
+ship_section_template = {
+	key = "PlasmaCorvette"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	weapon_preferences = { weapon_type_plasma }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = plasma_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = plasma_corvette_2
+		}
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	
+	cost = 30
+}
+
+ship_section_template = {
+	key = "DisruptorCorvette"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_S3_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	weapon_preferences = { weapon_type_disruptor }
+	ai_weight = {
+		modifier = {
+			factor = 20
+			has_country_flag = disruptor_corvette_1
+		}
+		modifier = {
+			factor = 10
+			has_country_flag = disruptor_corvette_2
+		}
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	
+	cost = 30
+}

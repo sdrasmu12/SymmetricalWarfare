@@ -23,6 +23,14 @@ component_set = {
 }
 
 component_set = {
+	key = "combat_computer_corvettes"
+	
+	show_in_designer = no
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1	
+}
+
+component_set = {
 	key = "ship_sensor_components"
 	
 	show_in_designer = no

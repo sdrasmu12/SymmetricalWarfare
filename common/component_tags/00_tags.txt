@@ -3,6 +3,15 @@
 # Component Tags can be given scripted in component_templates and is used to group components together for the use of common modifiers
 #
 
+weapon_type_artillery
+weapon_type_torpedo
+weapon_type_energy_torpedo
+weapon_type_disruptor
+weapon_type_bomber
+weapon_type_laser
+weapon_type_missile
+weapon_type_plasma
+weapon_type_mass_driver
 weapon_type_energy
 weapon_type_kinetic
 weapon_type_explosive

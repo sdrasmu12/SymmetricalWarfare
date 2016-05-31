@@ -11,3 +11,5 @@ NDefines.NGraphics.BALLISTIC_PROJECTILE_MISSED_LIFETIME = 3.0 -- missed ballisti
 NDefines.NGraphics.MISSED_BEAM_LENGTH = 750.0 -- how long missed beams will be
 
 NDefines.NShip.FLEET_BASE_FORMATION_SCALE = 4 
+NDefines.NShip.DESIGNER_WEAPON_PREF_MUL = 500.00	-- How much does weapon preference tags in the ship designer affect the weight it assigns a weapon?
+NDefines.NShip.DESIGNER_WEAPON_STACKING_DIV = 0.00 -- The higher this is, the more the ship designer will try to vary which weapon types are used on its sections

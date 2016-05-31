@@ -45,7 +45,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_1" }
 	component_set = "MISSILE_1"
 	projectile_gfx = "small_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Missile Launcher
@@ -66,7 +66,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_1" }
 	component_set = "MISSILE_1"
 	projectile_gfx = "medium_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Missile Launcher
@@ -87,7 +87,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_1" }
 	component_set = "MISSILE_1"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Missile Launcher
@@ -108,7 +108,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_2" }
 	component_set = "MISSILE_2"
 	projectile_gfx = "small_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Missile Launcher
@@ -129,7 +129,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_2" }
 	component_set = "MISSILE_2"
 	projectile_gfx = "medium_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Missile Launcher
@@ -150,7 +150,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_2" }
 	component_set = "MISSILE_2"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Strike Missile Launcher
@@ -171,7 +171,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_3" }
 	component_set = "MISSILE_3"
 	projectile_gfx = "small_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Strike Missile Launcher
@@ -192,7 +192,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_3" }
 	component_set = "MISSILE_3"
 	projectile_gfx = "medium_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Strike Missile Launcher
@@ -213,7 +213,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_3" }
 	component_set = "MISSILE_3"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Heavy Missile Launcher
@@ -234,7 +234,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_4" }
 	component_set = "MISSILE_4"
 	projectile_gfx = "small_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Heavy Missile Launcher
@@ -255,7 +255,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_4" }
 	component_set = "MISSILE_4"
 	projectile_gfx = "medium_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Heavy Missile Launcher
@@ -277,7 +277,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_4" }
 	component_set = "MISSILE_4"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Heavy Missile Launcher
@@ -299,7 +299,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_5" }
 	component_set = "MISSILE_5"
 	projectile_gfx = "small_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Heavy Missile Launcher
@@ -321,7 +321,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_5" }
 	component_set = "MISSILE_5"
 	projectile_gfx = "medium_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Heavy Missile Launcher
@@ -343,7 +343,7 @@ weapon_component_template = {
 	prerequisites = { "tech_missiles_5" }
 	component_set = "MISSILE_5"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 # ####################
@@ -367,7 +367,7 @@ weapon_component_template = {
 	projectile_gfx = "small_missile"
 	hidden = yes
 	component_set = "SPACEPORT_MISSILE"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 weapon_component_template = {
@@ -387,7 +387,7 @@ weapon_component_template = {
 	projectile_gfx = "medium_missile"
 	hidden = yes
 	component_set = "SPACEPORT_MISSILE"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 weapon_component_template = {
@@ -407,7 +407,7 @@ weapon_component_template = {
 	projectile_gfx = "large_missile"
 	hidden = yes
 	component_set = "SPACEPORT_MISSILE"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 
@@ -434,7 +434,7 @@ weapon_component_template = {
 	prerequisites = { "tech_swarmer_missiles_1" }
 	component_set = "SWARMER_MISSILE_1"
 	projectile_gfx = "swarmer_missiles"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 ### Advanced Swarmer Missile Launcher
@@ -456,7 +456,7 @@ weapon_component_template = {
 	prerequisites = { "tech_swarmer_missiles_2" }
 	component_set = "SWARMER_MISSILE_2"
 	projectile_gfx = "swarmer_missiles_02"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_missile }
 }
 
 # ####################
@@ -483,7 +483,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_1" }
 	component_set = "TORPEDO_1"
 	projectile_gfx = "small_torpedo"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Torpedo Launcher
@@ -505,7 +505,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_1" }
 	component_set = "TORPEDO_1"
 	projectile_gfx = "medium_torpedo"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Torpedo Launcher
@@ -527,7 +527,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_1" }
 	component_set = "TORPEDO_1"
 	projectile_gfx = "large_torpedo"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Armored Torpedoes
@@ -549,7 +549,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_2" }
 	component_set = "TORPEDO_2"
 	projectile_gfx = "small_torpedo_02"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Armored Torpedoes
@@ -571,7 +571,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_2" }
 	component_set = "TORPEDO_2"
 	projectile_gfx = "medium_torpedo_02"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Armored Torpedoes
@@ -593,7 +593,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_2" }
 	component_set = "TORPEDO_2"
 	projectile_gfx = "large_torpedo_02"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Striker Torpedoes
@@ -615,7 +615,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_3" }
 	component_set = "TORPEDO_3"
 	projectile_gfx = "small_torpedo_03"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Striker Torpedoes
@@ -637,7 +637,7 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_3" }
 	component_set = "TORPEDO_3"
 	projectile_gfx = "medium_torpedo_03"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
 
 ### Striker Torpedoes
@@ -659,5 +659,5 @@ weapon_component_template = {
 	prerequisites = { "tech_torpedoes_3" }
 	component_set = "TORPEDO_3"
 	projectile_gfx = "large_torpedo_03"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive weapon_type_torpedo }
 }
